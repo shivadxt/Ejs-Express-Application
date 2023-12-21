@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var session = require("express-session");
 
 var app = express();
 
@@ -18,6 +19,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Setting up session 
+app.use(session({
+  resave:false, //If value of session doesn't change don't save again and again.
+  saveUninitialized:false, //Not saving useless information that is not required
+  secret:"Hello There" //Secret key is the string through which we'll encrypt the data
+}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
