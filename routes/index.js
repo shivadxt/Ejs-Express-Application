@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+//Create user
 router.get('/create', async function(req, res) {
   const userCreate = await userModel.create({
     username: "Shivam",
@@ -17,16 +18,19 @@ router.get('/create', async function(req, res) {
   res.send(userCreate);
 });
 
+//Find all users
 router.get("/allusers", async function(req,res){
  let allUser = await userModel.find();
  res.send(allUser);
 });
 
+//Find single user
 router.get("/findone", async function(req,res){
   let findUser = await userModel.findOne({username:"Shivam"});
   res.send(findUser);
 })
 
+//Delete user 
 router.get("/delete", async function(req,res){
   let deletedUser = await userModel.findOneAndDelete({
     username: "Shivam"
