@@ -22,13 +22,13 @@ Working on CRD Operations of MongoDB:
 
 Learning in deep about Session and Cookies:
 
-- Sessions:
-  -Install package : npm i express-session
-  -Creating sessions : req.session.sessionname = variable;
-  -Using sessions across routes : req.session.sessionname
-  -Destroying sessions : req.session.destroy
+Sessions:
+ - Install package : npm i express-session
+ - Creating sessions : req.session.sessionname = variable;
+ - Using sessions across routes : req.session.sessionname
+ - Destroying sessions : req.session.destroy
 
-- Cookies:
-  -Creating cookies.
-  -Using cookies across routes.
-  -Destroying cookies. 
+Cookies:
+ - Creating cookies.
+ - Using cookies across routes.
+ - Destroying cookies. 
