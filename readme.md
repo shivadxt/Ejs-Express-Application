@@ -19,3 +19,15 @@ Working on CRD Operations of MongoDB:
 - find()
 - findOne()
 - findOneAndDelete()
+
+Learning in deep about Session and Cookies:
+
+- Sessions:
+  -Creating sessions.
+  -Using sessions across routes.
+  -Destroying sessions.
+
+- Cookies:
+  -Creating cookies.
+  -Using cookies across routes.
+  -Destroying cookies. 
