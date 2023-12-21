@@ -13,3 +13,9 @@ Create Schema
 Create model and export
 - module.exports = mongoose.model("user",schema) 
 - "user" is the models name we have provided to the schema name "schema"
+
+Working on CRD Operations of MongoDB:
+- create()
+- find()
+- findOne()
+- findOneAndDelete()
