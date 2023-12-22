@@ -43,6 +43,8 @@ Cookies:
 
  - Setup : app.use(cookieParser());      (Already setup in app.js)
 
- - Creating cookies : 
- - Using cookies across routes.
- - Destroying cookies. 
+ - Creating cookies : res.cookie("name",value);
+
+ - Using cookies across routes: req.cookies.name;
+
+ - Destroying cookies: res.clearCookie("name");
