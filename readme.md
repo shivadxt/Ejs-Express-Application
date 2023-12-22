@@ -24,11 +24,25 @@ Learning in deep about Session and Cookies:
 
 Sessions:
  - Install package : npm i express-session
+
+ - Setup : app.use(session({
+  resave:false, 
+  saveUninitialized:false, 
+  secret:"blabalakatahegxvhdbw990" 
+  }));
+
  - Creating sessions : req.session.sessionname = variable;
+
  - Using sessions across routes : req.session.sessionname
+
  - Destroying sessions : req.session.destroy
 
+
 Cookies:
- - Creating cookies.
+ - Install package : npm i cookie-parser (Already installed in ejs app)
+
+ - Setup : app.use(cookieParser());      (Already setup in app.js)
+
+ - Creating cookies : 
  - Using cookies across routes.
  - Destroying cookies. 
